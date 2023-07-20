@@ -292,5 +292,53 @@
         "header": {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
         }
+    },
+    {
+        "desc": "asprova",
+        "url": "https://www.asprova.cn/sendVerification",
+        "method": "post",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Cookie": "PHPSESSID=ksae3t8m3ghv9221i1rvaipj4a; Hm_lvt_73518243f2764bb771603f147039d50e=1689853587; Hm_lpvt_73518243f2764bb771603f147039d50e=1689853603",
+            "Origin": "https://www.asprova.cn",
+            "Referer": "https://www.asprova.cn/register.html",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "mobile": "[phone]"
+        },
+        "form": ""
+    },
+    {
+        "desc": "itv.morequick",
+        "url": "https://itv.morequick.net/webapi/sms_code",
+        "method": "post",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Referer": "https://itv.morequick.net",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "tel": "[phone]",
+            "item": "get",
+            "type": "3"
+        },
+        "form": ""
+    },
+    {
+        "desc": "快乐购",
+        "url": "http://hbp2.happigo.com/retrieve/smsCaptcha",
+        "method": "post",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Referer": "http://hbp2.happigo.com/reg/user",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "mobile": "[phone]",
+            "fromsms": "reg"
+        },
+        "form": ""
     }
 ]
