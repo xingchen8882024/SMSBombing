@@ -58,6 +58,11 @@ class SMSBombingCommand extends SingleCommandApplication
                 foreach ($apis as $api) {
                     $url = $fn($phone, $api['url']);
                     $body = is_array($api['data']) ? array_map(fn ($item): string|array => $fn($phone, $item), $api['data']) : [];
+
+                    if(isset($api['time'])) {
+                        $body = array_map(fn ($data): string => str_replace('[time]', time(), $data), $body);
+                    }
+
                     $body = isset($api['form']) ? http_build_query($body) : json_encode($body, JSON_UNESCAPED_UNICODE);
                     yield new Request($api['method'], $url, is_array($api['header']) ? $api['header'] : [], $body);
                 }
