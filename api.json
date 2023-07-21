@@ -27,16 +27,6 @@
         }
     },
     {
-        "desc": "巨人网络",
-        "url": "https://reg.ztgame.com/common/sendmpcode?source=giant_site&nonce=&type=verifycode&token=&refurl=https%3A%2F%2Flogin.ztgame.com%2F&cururl=http%3A%2F%2Freg.ztgame.com%2F&phone=[phone]&mpcode=&pwd=&tname=&idcard=",
-        "method": "GET",
-        "header": {
-            "Referer": "https://reg.ztgame.com/",
-            "X-Requested-With": "XMLHttpRequest"
-        },
-        "data": ""
-    },
-    {
         "desc": "金中网",
         "url": "https://jrh.financeun.com/Login/sendMessageCode3.html?mobile=[phone]&mbid=197858&check=3",
         "method": "GET",
@@ -51,71 +41,11 @@
         "data": ""
     },
     {
-        "desc": "某数图表web(存疑)",
-        "url": "https://dycharts.com/vis/auth/send_signin_sms_code",
-        "method": "POST",
-        "header": "",
-        "data": {
-            "phoneNo": "13809213237"
-        }
-    },
-    {
-        "desc": "加密电话",
-        "url": "https://m.4009991000.com/valNumQry.action",
-        "method": "POST",
-        "header": "",
-        "data": {
-            "appType": "1",
-            "app_id": "5555",
-            "mobileNo": "[phone]",
-            "sig": "16cd52ea74f5ea4a6c2fe80b9a04f8b5",
-            "src": "1",
-            "v": "4.9.2",
-            "validType": "3"
-        }
-    },
-    {
-        "desc": "秘塔写作",
-        "url": "https://xiezuocat.com/verify?type=signup",
-        "method": "POST",
-        "header": "",
-        "data": {
-            "phone": "86-[phone]"
-        }
-    },
-    {
         "desc": "乐教乐学",
         "url": "http://id.lejiaolexue.com/api/sendvericode.ashx?phone=[phone]",
         "method": "GET",
         "header": "",
         "data": ""
-    },
-    {
-        "desc": "网心云APP",
-        "url": "https://account-box.onethingpcs.com/xluser.core.login/v3/sendsms",
-        "method": "POST",
-        "header": "",
-        "data": {
-            "protocolVersion": "301",
-            "sequenceNo": "1000001",
-            "platformVersion": "10",
-            "isCompressed": "0",
-            "appid": "22017",
-            "clientVersion": "3.15.1",
-            "peerID": "00000000000000000000000000000000",
-            "appName": "ANDROID-com.onethingcloud.android",
-            "sdkVersion": "204500",
-            "devicesign": "div101.095893e2bfa13a199f83691076c8bbb9ab0d01f75c929975048142c2fa38402b",
-            "netWorkType": "WIFI",
-            "providerName": "NONE",
-            "deviceModel": "M2102J2SC",
-            "deviceName": "Xiaomi M2102j2sc",
-            "OSVersion": "11",
-            "creditkey": "",
-            "hl": "zh-CN",
-            "mobile": "[phone]",
-            "register": "0"
-        }
     },
     {
         "desc": "费耘网",
@@ -132,16 +62,6 @@
         "method": "POST",
         "header": "",
         "data": {
-            "phone": "[phone]"
-        }
-    },
-    {
-        "desc": "火象",
-        "url": "https://v1.alphazone-data.cn/academy/api/v1/sendsms",
-        "method": "POST",
-        "header": "",
-        "data": {
-            "temp": "1",
             "phone": "[phone]"
         }
     },
@@ -204,25 +124,14 @@
         "method": "POST",
         "header": {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Referer": "https://www.haohaozhu.cn/"
+            "Referer": "https://www.haohaozhu.cn/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Cookie": "Hm_lvt_88ed309619bb4d905a1eaa72dd52f7b2=1689767197; gr_user_id=b621c307-5ed6-4a10-bf38-c40de79df73e; acw_tc=0bd17c1616899241429638368ed43cba8b9c812a5ef9f5372bb039e21fdb15; b83fa60863bff9fd_gr_session_id=e63341ed-1130-4ab5-85de-19cf272ed474; b83fa60863bff9fd_gr_session_id_sent_vst=e63341ed-1130-4ab5-85de-19cf272ed474; Hm_lpvt_88ed309619bb4d905a1eaa72dd52f7b2=1689924145; SERVERID=9aec89b71054187e32e21c632391cab1|1689924145|1689924142; dfg=301689ju92Rx4Hfp1W4viOVBp5jsO0H0EXIGThO0dXhvJ"
         },
         "data": {
             "phone": "[phone]",
-            "country_code":"86",
-            "identifying_type":"1"
-        },
-        "form": ""
-    },
-    {
-        "desc": "宜搜小说",
-        "url": "https://book.easou.com/ta/phonevcode.m",
-        "method": "POST",
-        "header": {
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Referer": "https://book.easou.com/ta/registerByPhone.m?backUrl=%2Fta%2Findex.m"
-        },
-        "data": {
-            "phone": "[phone]"
+            "country_code": "86",
+            "identifying_type": "1"
         },
         "form": ""
     },
@@ -257,16 +166,6 @@
         "form": ""
     },
     {
-        "desc": "四川航空",
-        "url": "https://flights.sichuanair.com/3uair/ibe/profile/processSendSMSNew.do?ConversationID=&smsType=REGISTER&mobilePhone=[phone]&verkey=MOBILELOGIN",
-        "method": "get",
-        "data": "",
-        "header": {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-            "Referer": "https://flights.sichuanair.com/3uair/ibe/profile/createProfile.do"
-        }
-    },
-    {
         "desc": "安徽相亲网",
         "url": "https://www.ahxiangqin.cn/index.php?c=picker&a=sendmobile",
         "method": "post",
@@ -283,15 +182,6 @@
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
         },
         "form": ""
-    },
-    {
-        "desc": "印象笔记",
-        "url": "https://app.yinxiang.com/SendOneTimePassword.action?sig=b4d74d0018ad5084638ae1333f4c2a61&recipient=[phone]&textotp=",
-        "method": "get",
-        "data": "",
-        "header": {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
-        }
     },
     {
         "desc": "asprova",
