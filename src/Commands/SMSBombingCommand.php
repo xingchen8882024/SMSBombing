@@ -84,6 +84,7 @@ class SMSBombingCommand extends SingleCommandApplication
                     'concurrency' => 5,
                     'fulfilled' => function (Response $response, $index) use ($outFn, $fn): void {
                         $responseBody = $response->getBody();
+                        $contents = $responseBody->getContents();
                         $body = $fn($responseBody);
 
                         if (mb_strlen($responseBody) == mb_strlen($body)) {
@@ -93,6 +94,7 @@ class SMSBombingCommand extends SingleCommandApplication
                             }
                         }
 
+                        $body = (is_null($body) or $body == 'null') ? trim($contents) : $body;
                         $outFn($body, $index);
                     },
                     'rejected' => function (RequestException|ConnectException $reason, $index) use ($outFn, $fn): void {
