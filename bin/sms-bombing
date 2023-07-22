@@ -14,6 +14,7 @@
 namespace Vinhson\SmsBombing;
 
 use Symfony\Component\Console\Application;
+use Vinhson\SMSBombing\Events\ConsoleEventRun;
 use Vinhson\SmsBombing\Commands\SMSBombingCommand;
 
 $autoloads = [
@@ -27,7 +28,21 @@ foreach ($autoloads as $autoload) {
 }
 
 $app = new Application('sms-bombing', 'v1.0.0');
+
+spl_autoload_register(function () {
+    include_once __DIR__ . '/../src/Events/ConsoleEventRun.php';
+});
+
+# Add dispatcher
+$dispatcher = Event::getEventDispatcher();
+$dispatcher->addListener('console.running', function (ConsoleEventRun $consoleEventRunning) {
+    $consoleEventRunning->setFilename(__DIR__ . '/../api.json');
+});
+$app->setDispatcher($dispatcher);
+
+# Add command
 $sms = new SMSBombingCommand();
 $app->add($sms);
+
 $app->setDefaultCommand($sms->getName(), true);
 $app->run();

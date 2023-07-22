@@ -13,9 +13,10 @@
 namespace Vinhson\SmsBombing\Commands;
 
 use Exception;
-use Illuminate\Support\Collection;
+use Vinhson\SMSBombing\Event;
 use GuzzleHttp\Psr7\{Request, Response};
 use GuzzleHttp\Exception\RequestException;
+use Vinhson\SMSBombing\Events\ConsoleEventRun;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\SingleCommandApplication;
@@ -43,13 +44,15 @@ class SMSBombingCommand extends SingleCommandApplication
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        $event = Event::getEventDispatcher()->dispatch(new ConsoleEventRun(new static(), $input, $output), 'console.running');
+
         $i = 1;
         $status = true;
-        $apis = $this->fetchApi();
         $num = $input->getOption('num');
         $loop = $input->getOption('loop');
         $phone = $input->getArgument('phone');
         $client = new Client(['verify' => false, 'timeout' => $input->getOption('timeout')]);
+        $apis = collect(json_decode(file_get_contents($event->getFilename()), true));
 
         do {
             $apis = $num == 'all' ? $apis : ($num > $apis->count() ? $apis : $apis->random($num));
@@ -131,13 +134,5 @@ class SMSBombingCommand extends SingleCommandApplication
         } while ($status);
 
         return self::SUCCESS;
-    }
-
-    /**
-     * @return Collection
-     */
-    protected function fetchApi(): Collection
-    {
-        return collect(json_decode(file_get_contents(__DIR__ . '/../../api.json'), true));
     }
 }
