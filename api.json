@@ -268,5 +268,21 @@
             "Cookie": "Hm_lvt_b8feb3bac8c21f12c39b6af852dd50f4=1689859861; Hm_lpvt_b8feb3bac8c21f12c39b6af852dd50f4=1689859861; guest_uuid=64b937141b91622e7f8b217d"
         },
         "data": ""
+    },
+    {
+        "desc": "语雀",
+        "url": "https://www.yuque.com/api/validation_codes",
+        "method": "post",
+        "header": {
+            "Referer": "https://www.yuque.com/login?register_with_scene=true&defaultType=org&register_from=official_website_top_button",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "X-Requested-With": "XMLHttpRequest",
+            "Content-Type": "application/json"
+        },
+        "data": {
+            "action": "login",
+            "channel": "sms",
+            "target": "[phone]"
+        }
     }
 ]
