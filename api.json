@@ -284,5 +284,33 @@
             "channel": "sms",
             "target": "[phone]"
         }
+    },
+    {
+        "desc": "万维易源",
+        "url": "https://www.showapi.com/auth/sendPhoneMessage_register",
+        "method": "post",
+        "header": {
+            "Referer": "https://www.showapi.com/auth/reg",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "X-Requested-With": "XMLHttpRequest",
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "data": {
+            "phone": "[phone]"
+        },
+        "form": ""
+    },
+    {
+        "desc": "GAuth 权限认证",
+        "url": "https://openapi.lddgo.net/base/gauth/api/v1/SendSmsCode",
+        "method": "post",
+        "header": {
+            "Referer": "https://gauth.lddgo.net/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/json"
+        },
+        "data": {
+            "phone": "[phone]"
+        }
     }
 ]
