@@ -1,8 +1,8 @@
 # docker 运行
 
 ```bash
-docker pull ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:v1
-docker run --rm -e PHONE=17621838888 ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:v1
+docker pull ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:latest
+docker run --rm -e PHONE=17621838888 ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:latest
 ```
 
 # -e 参数
