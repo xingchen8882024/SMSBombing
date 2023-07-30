@@ -1,0 +1,25 @@
+name: "build image"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+          echo "输出版本号：$VERSION"
+          docker build -t ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:latest .
+          docker login ghcr.io -u ${{ github.actor }} -p $GITHUB_TOKEN
+          docker push ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:latest
+          docker tag ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:latest ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:$VERSION
+          docker push ghcr.io/xiaoxuan6/SMSBombing/sms-bombing:$VERSION
+          docker logout

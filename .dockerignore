@@ -1,0 +1,12 @@
+/vendor/
+.idea
+.php-cs-fixer.cache
+composer.lock
+.editorconfig
+.gitignore
+.php-cs-fixer.php
+api.yml
+LICENSE
+README.md
+rector.php
+README-docker.md
