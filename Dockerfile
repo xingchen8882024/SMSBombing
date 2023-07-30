@@ -8,11 +8,11 @@ RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/compos
     chmod +x run.sh && \
     chmod +x bin/sms-bombing
 
-ENV PHONE=""
-ENV NUM="all"
-ENV LOOP="0"
-ENV INTERVALS="0"
-ENV TIMEOUT="10"
-ENV LENGTH="128"
+ENV PHONE="" \
+    NUM="all" \
+    LOOP="0" \
+    INTERVALS="0" \
+    TIMEOUT="10" \
+    LENGTH="128"
 
 ENTRYPOINT ["/var/www/html/run.sh"]
