@@ -4,7 +4,9 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 COPY . /var/www/html
 RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/ && \
-    composer install --no-dev
+    composer install --no-dev && \
+    chmod +x run.sh && \
+    chmod +x bin/sms-bombing
 
 ENV PHONE=""
 ENV NUM="all"
