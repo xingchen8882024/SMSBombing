@@ -5,4 +5,5 @@ bin/sms-bombing $PHONE \
     --loop=$LOOP \
     --intervals=$INTERVALS \
     --timeout=$TIMEOUT \
-    --length=$LENGTH
+    --length=$LENGTH \
+    --stdout=$STDOUT

@@ -34,7 +34,8 @@ class SMSBombingCommand extends SingleCommandApplication
             ->addOption('loop', 'l', InputOption::VALUE_OPTIONAL, '启动循环轰炸次数,', 0)
             ->addOption('intervals', 'i', InputOption::VALUE_OPTIONAL, '循环轰炸间隔时间', 0)
             ->addOption('timeout', 't', InputOption::VALUE_OPTIONAL, '请求超时时间', 30)
-            ->addOption('length', 'length', InputOption::VALUE_OPTIONAL, '报错展示长度', 64);
+            ->addOption('length', 'length', InputOption::VALUE_OPTIONAL, '报错展示长度', 64)
+            ->addOption('stdout', 'out', InputOption::VALUE_OPTIONAL, '是否输出网站描述', false);
     }
 
     /**
@@ -73,11 +74,15 @@ class SMSBombingCommand extends SingleCommandApplication
 
             $fn = fn ($body): string => mb_strlen($body) > 128 ? mb_substr($body, 0, $input->getOption('length')) : $body;
 
-            $outFn = function ($response, $index) use ($output, $apis): void {
+            $outFn = function ($response, $index) use ($input, $output, $apis): void {
                 $desc = $apis->get($index)['desc'];
-                $output->writeln("<info>索引：{$index}</info>" .
+
+                $message = $input->getOption('stdout') ?
                     PHP_EOL . "请求网站：<comment>{$desc}</comment> " .
-                    PHP_EOL . "请求结果：<comment>{$response}</comment>");
+                    PHP_EOL . "请求结果：<comment>{$response}</comment>" :
+                    " 请求结果：<comment>{$response}</comment>";
+
+                $output->writeln("<info>索引：{$index}</info>" . $message);
             };
 
             (new Pool(

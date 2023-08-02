@@ -1,7 +1,48 @@
 [
+    # 阿里云
     "https://account.aliyun.com/login/login.htm?oauth_callback=https%3A%2F%2Fcr.console.aliyun.com%2Fcn-hangzhou%2Finstances%2Fmirrors&lang=zh",
+    # 婚恋 sign
     "https://51marryyou.com/",
+    # 聚合数据 User-Agent-Verify
     "https://www.juhe.cn/register",
+    # 欢迎注册极速数据 hashcode
     "https://www.jisuapi.com/my/reg",
+    # 用AI让图像处理更简单 X-Captcha
     "https://picwish.cn/login?return_url=https%3A%2F%2Fpicwish.cn%2Ftools",
+    # 昆明航空 sign
+    "https://www.airkunming.com/#/user/register"
+    # 四川航空 {"Success":"false","ErrorCode":"E-02-03-003","ErrorText":"please input image code"}
+    "http://flights.sichuanair.com/3uair/ibe/profile/createProfile.do"
+    # 拼多多短信登陆接口 screen_token
+    "https://mobile.yangkeduo.com/login.html"
+    # 学而思 invisible_sig
+    "https://login.xueersi.com/"
+    # 58
+    "https://passport.58.com/reg/?path=https%3A%2F%2Flinyi.58.com%2F&source=58-homepage-pc&PGTID=0d100000-001f-9d9a-21c1-6d5db5db82a9&ClickID=4"
+    # 咪咕
+    "https://passport.migu.cn/portal/user/register/msisdn?sourceid=220001&callbackURL=https%3A%2F%2Fmusic.migu.cn%2Fv3"
+    # validate
+    "https://www.decathlon.com.cn/"
+    # _x_rdsy_block_
+    "https://reg.suning.com/person.do"
+    # 微盟
+    "https://account.weimob.com/codeLogin"
+    # 51
+    "http://caigou.51book.com/caigou/manage/designatedRegistryNewSignon.in?regType=1"
+    # 优酷
+    "https://account.youku.com/"
+    # 图巨人 X-Csrf-Token
+    "https://www.tujuren.com/send_sms"
+    #
+    "https://m.mgqr.com/user/reg.aspx"
+    "http://m.tk.cn/tk-online/common/login-process/#/"
+    "https://www.4399.com/"
+    # checkRegister
+    "https://www.taodingding.com/regist"
+    # sessionId
+    "https://www.gaodun.com/"
+    "http://m.114-91.com/me/memberapply"
+    "https://login.hujiang.com/"
+    # token
+    "https://passport.taoche.com/login/?returnurl=https%3A%2F%2Fwww.taoche.com%2F"
 ]

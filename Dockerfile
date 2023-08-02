@@ -13,6 +13,7 @@ ENV PHONE="" \
     LOOP="0" \
     INTERVALS="0" \
     TIMEOUT="10" \
-    LENGTH="128"
+    LENGTH="128" \
+    STDOUT="false"
 
 ENTRYPOINT ["/var/www/html/run.sh"]

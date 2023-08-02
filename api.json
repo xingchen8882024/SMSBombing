@@ -27,20 +27,6 @@
         }
     },
     {
-        "desc": "金中网",
-        "url": "https://jrh.financeun.com/Login/sendMessageCode3.html?mobile=[phone]&mbid=197858&check=3",
-        "method": "GET",
-        "header": "",
-        "data": ""
-    },
-    {
-        "desc": "永城至敏",
-        "url": "http://101.132.126.166:8080/message/sendVerifyCode?callback=successCallback&mobilePhone=[phone]&t=1589625247333action_type=regist&mobile=[phone]",
-        "method": "GET",
-        "header": "",
-        "data": ""
-    },
-    {
         "desc": "乐教乐学",
         "url": "http://id.lejiaolexue.com/api/sendvericode.ashx?phone=[phone]",
         "method": "GET",
@@ -92,20 +78,6 @@
         "data": ""
     },
     {
-        "desc": "蘑菇云游",
-        "url": "https://www.moguyouxi.cn/Home/SendVerificationCode",
-        "method": "POST",
-        "header": {
-            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-            "Referer": "https://www.moguyouxi.cn/"
-        },
-        "data": {
-            "phone": "[phone]",
-            "code": ""
-        },
-        "form": ""
-    },
-    {
         "desc": "奇热漫画",
         "url": "https://www.qiremanhua.com/passport/send_msg_code",
         "method": "POST",
@@ -115,23 +87,6 @@
         },
         "data": {
             "phone": "[phone]"
-        },
-        "form": ""
-    },
-    {
-        "desc": "好好住",
-        "url": "https://www.haohaozhu.cn/f/y/api/Login/Identifyingcode",
-        "method": "POST",
-        "header": {
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Referer": "https://www.haohaozhu.cn/",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-            "Cookie": "Hm_lvt_88ed309619bb4d905a1eaa72dd52f7b2=1689767197; gr_user_id=b621c307-5ed6-4a10-bf38-c40de79df73e; acw_tc=0bd17c1616899241429638368ed43cba8b9c812a5ef9f5372bb039e21fdb15; b83fa60863bff9fd_gr_session_id=e63341ed-1130-4ab5-85de-19cf272ed474; b83fa60863bff9fd_gr_session_id_sent_vst=e63341ed-1130-4ab5-85de-19cf272ed474; Hm_lpvt_88ed309619bb4d905a1eaa72dd52f7b2=1689924145; SERVERID=9aec89b71054187e32e21c632391cab1|1689924145|1689924142; dfg=301689ju92Rx4Hfp1W4viOVBp5jsO0H0EXIGThO0dXhvJ"
-        },
-        "data": {
-            "phone": "[phone]",
-            "country_code": "86",
-            "identifying_type": "1"
         },
         "form": ""
     },
@@ -180,22 +135,6 @@
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
             "Referer": "https://www.ahxiangqin.cn/index.php?c=passport&a=reg",
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-        },
-        "form": ""
-    },
-    {
-        "desc": "asprova",
-        "url": "https://www.asprova.cn/sendVerification",
-        "method": "post",
-        "header": {
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Cookie": "PHPSESSID=ksae3t8m3ghv9221i1rvaipj4a; Hm_lvt_73518243f2764bb771603f147039d50e=1689853587; Hm_lpvt_73518243f2764bb771603f147039d50e=1689853603",
-            "Origin": "https://www.asprova.cn",
-            "Referer": "https://www.asprova.cn/register.html",
-            "X-Requested-With": "XMLHttpRequest"
-        },
-        "data": {
-            "mobile": "[phone]"
         },
         "form": ""
     },
@@ -270,22 +209,6 @@
         "data": ""
     },
     {
-        "desc": "语雀",
-        "url": "https://www.yuque.com/api/validation_codes",
-        "method": "post",
-        "header": {
-            "Referer": "https://www.yuque.com/login?register_with_scene=true&defaultType=org&register_from=official_website_top_button",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-            "X-Requested-With": "XMLHttpRequest",
-            "Content-Type": "application/json"
-        },
-        "data": {
-            "action": "login",
-            "channel": "sms",
-            "target": "[phone]"
-        }
-    },
-    {
         "desc": "万维易源",
         "url": "https://www.showapi.com/auth/sendPhoneMessage_register",
         "method": "post",
@@ -341,5 +264,164 @@
             "mobile": "[phone]",
             "type": "0"
         }
+    },
+    {
+        "desc": "入党",
+        "url": "https://api.diantui.wxthe.com/addon/life/auth/phone/sendsms",
+        "method": "post",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/json",
+            "Pid": "33503148186406912",
+            "Referer": "https://life.diantui.wxthe.com/"
+        },
+        "data": {
+            "phone": "[phone]"
+        }
+    },
+    {
+        "desc": "写作猫",
+        "url": "https://xiezuocat.com/verify?type=signup",
+        "method": "post",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/json"
+        },
+        "data": {
+            "phone": "86-[phone]"
+        }
+    },
+    {
+        "desc": "https://m.yiwise.com",
+        "url": "https://m.yiwise.com/apiPlatform/verificationCode/send?phoneNumber=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://m.95303.com",
+        "url": "https://m.95303.com/api/OrderYx/GetCodeBySMS?mobile=[phone]&_=1626625066773",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://www.51hawo.com",
+        "url": "https://www.51hawo.com/apollo/MobileCode/sendMobileCode?mobile=[phone]&sms_type=101&register_from=20000091",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://igetcool-share.igetcool.com",
+        "url": "https://igetcool-share.igetcool.com/mall-server/api/smscode/sendSmscode?phone=[phone]&countrycode=86&smstype=0&type=0",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://www.sensorsdata.cn",
+        "url": "https://www.sensorsdata.cn/api/passport/sms/quest_new/[phone]?_t=qajgslud4i",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://www.hainanwangdai.com",
+        "url": "https://www.hainanwangdai.com/api/v1/user/agreement/privacy/status?utmSource=yrd_m_web&phone=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "http://m.5khouse.com",
+        "url": "http://m.5khouse.com/ashx/yzm.ashx?tel=[phone]&ys=hqyzm&sj=0.11739289648424056",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://app.zhuanzhuan.com",
+        "url": "https://app.zhuanzhuan.com/zz/transfer/getCaptcha?type=1&mobile=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://www.xuebangsoft.net",
+        "url": "http://www.xuebangsoft.net/eduboss/CommonAction/sendVarifyCodeToPhone.do?phoneNumber=[phone]&regTimeCode=1589627585503",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://passport.eqxiu.com",
+        "url": "https://passport.eqxiu.com/eqs/sms/token?phone=[phone]&type=quickLogin&checkPhone=1&channel=21&version=4.4.1",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://sso-c.souche.com",
+        "url": "https://sso-c.souche.com/loginApi/getCaptchaUrlByPhone.json?app=tangeche&phone=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://m.paperword.com",
+        "url": "https://m.paperword.com/mobile/code/v2/login/code?promote=0&mobile=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://mall-cashback.tinman.cn",
+        "url": "https://mall-cashback.tinman.cn/noRight/campaign/send-verification-code?phone=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://z12.cnzz.com",
+        "url": "https://z12.cnzz.com/stat.htm?id=1280063424&r=&lg=zh-cn&ntime=1632490428&cnzz_eid=1185173797-1632490428-&showp=424x906&p=",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://m.ctscd.com",
+        "url": "http://m.ctscd.com/sys/ajax/User/CheckOrActivat.ashx?U_Mobile=[phone]&type=Mobile&checktext=[phone]&_=1624877392029",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://dss.xiongmaopeilian.com",
+        "url": "https://dss.xiongmaopeilian.com/student_wx/student/send_sms_code?country_code=86&mobile=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://aitob.xiaoyezi.com",
+        "url": "https://aitob.xiaoyezi.com/student_wx/student/send_sms_code?mobile=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://www.1dagong.com",
+        "url": "https://www.1dagong.com/Login/sendCode?mobile=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://www.sk-vip.cn",
+        "url": "http://www.sk-vip.cn/index.php?m=&c=page&a=yunhu&phone=15506725478",
+        "method": "get",
+        "header": "",
+        "data": ""
     }
 ]
