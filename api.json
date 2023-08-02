@@ -341,5 +341,51 @@
             "mobile": "[phone]",
             "type": "0"
         }
+    },
+    {
+        "desc": "野兔",
+        "url": "https://www.yetu.net/wp-admin/admin-ajax.php",
+        "method": "post",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "user_phone": "[phone]",
+            "send_sms_code_nonce": "2be4ce92f8",
+            "sms_code": "",
+            "user_pass": "",
+            "member_form_register_nonce": "4a84f7d0d6",
+            "_wp_http_referer": "/register",
+            "action": "wpcom_send_sms_code"
+        },
+        "form": ""
+    },
+    {
+        "desc": "入党",
+        "url": "https://api.diantui.wxthe.com/addon/life/auth/phone/sendsms",
+        "method": "post",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/json",
+            "Pid": "33503148186406912",
+            "Referer": "https://life.diantui.wxthe.com/"
+        },
+        "data": {
+            "phone": "[phone]"
+        }
+    },
+    {
+        "desc": "写作猫",
+        "url": "https://xiezuocat.com/verify?type=signup",
+        "method": "post",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/json"
+        },
+        "data": {
+            "phone": "86-[phone]"
+        }
     }
 ]
