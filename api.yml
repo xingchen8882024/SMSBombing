@@ -45,4 +45,26 @@
     "https://login.hujiang.com/"
     # token
     "https://passport.taoche.com/login/?returnurl=https%3A%2F%2Fwww.taoche.com%2F"
+    "https://www.yetu.net/register"
+    # sign
+    "https://shd.shenhudong.com/register"
+    # signature
+    "http://liuyan.people.com.cn/signUp"
+    "https://www.acfun.cn/reg/"
+    "https://reg.taobao.com/member/reg/fast/union_reg?_regfrom=TB"
+    # csrfToken
+    "https://editor.588ku.com/"
+    "https://www.hnsweiqi.com/portal/reg/sendCode"
+    "https://www.bugbank.cn/api/verify_mobile"
+    "https://atomychina.com.cn/login"
+    "http://www.pmzaojia.com/register"
+    "https://www.haohaozhu.cn/"
+    "https://www.asprova.cn/register.html"
+    "https://hz.5i5j.com/"
+    "https://mubu.com/home"
+    "https://santamonicaeyewear.com/static/html/pc.html"
+    "https://gaotu100.com/"
+    "http://reg.suning.com"
+    "https://wd.yofogo.com/pages/pages/public/loginByCode?url=%2Fmember_myindex%3Fps%3D"
+    "https://passport.yhd.com/passport/register_input.do"
 ]

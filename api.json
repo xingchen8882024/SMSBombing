@@ -443,5 +443,52 @@
         "method": "get",
         "header": "",
         "data": ""
+    },
+    {
+        "desc": "小叶子陪练",
+        "url": "http://www.xiongmaopeilian.com/web/auth/send_validate_code",
+        "method": "post",
+        "header": {
+            "Referer": "http://www.xiongmaopeilian.com/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "mobile": "[phone]"
+        },
+        "form": ""
+    },
+    {
+        "desc": "www.pmzaojia.com",
+        "url": "http://www.pmzaojia.com/pmzaojia/api/user/sendRegisterPhoneCode?phoneNum=[phone]",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "www.sensorsdata.cn",
+        "url": "https://www.sensorsdata.cn/api/passport/sms/quest_new/[phone]%20?_t=lkz3elvc",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://api.qingmang.mobi",
+        "url": "http://api.qingmang.mobi/v1/account.sendVerification?platform=console&token=&phone=%2B86[phone]8&code=65080339",
+        "method": "get",
+        "header": "",
+        "data": ""
+    },
+    {
+        "desc": "https://api.hanwin.com",
+        "url": "https://api.hanwin.com/v1_sms_index/getSmsCode",
+        "method": "post",
+        "header": "",
+        "data": {
+            "share_id": "",
+            "phone": "[phone]",
+            "scene": "register_login"
+        }
     }
 ]
