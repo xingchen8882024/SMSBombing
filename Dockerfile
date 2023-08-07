@@ -2,10 +2,12 @@ FROM ghcr.io/xiaoxuan6/docker-images/php:8.0-fpm-alpine
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-COPY . /var/www/html
+COPY composer.json composer.lock /var/www/html/
 RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/ && \
-    composer install --no-dev && \
-    chmod +x run.sh && \
+    composer install --no-dev
+
+COPY . /var/www/html
+RUN chmod +x run.sh && \
     chmod +x bin/sms-bombing
 
 ENV PHONE="" \
@@ -16,4 +18,4 @@ ENV PHONE="" \
     LENGTH="128" \
     STDOUT="false"
 
-ENTRYPOINT ["/var/www/html/run.sh"]
+ENTRYPOINT ["/bin/sh", "/var/www/html/run.sh"]
