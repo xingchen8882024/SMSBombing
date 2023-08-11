@@ -16,11 +16,11 @@ use Exception;
 use Vinhson\SMSBombing\Event;
 use GuzzleHttp\Psr7\{Request, Response};
 use GuzzleHttp\Exception\RequestException;
-use Vinhson\SMSBombing\Events\ConsoleEventRun;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\SingleCommandApplication;
 use GuzzleHttp\{Client, Exception\ConnectException, Pool};
+use Vinhson\SMSBombing\Events\{ConsoleEventRun, PhoneValid};
 use Symfony\Component\Console\Input\{InputArgument, InputInterface, InputOption};
 
 class SMSBombingCommand extends SingleCommandApplication
@@ -45,6 +45,15 @@ class SMSBombingCommand extends SingleCommandApplication
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        /*** @var $event PhoneValid */
+        $event = Event::getEventDispatcher()->dispatch(new PhoneValid(new static(), $input, $output), 'console.phone');
+        if(! $event->getResult()) {
+            $output->writeln("<error>{$event->getMessage()}</error>");
+
+            return self::FAILURE;
+        }
+
+        /*** @var $event ConsoleEventRun */
         $event = Event::getEventDispatcher()->dispatch(new ConsoleEventRun(new static(), $input, $output), 'console.running');
 
         $i = 1;

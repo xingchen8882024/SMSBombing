@@ -14,8 +14,8 @@
 namespace Vinhson\SmsBombing;
 
 use Symfony\Component\Console\Application;
-use Vinhson\SMSBombing\Events\ConsoleEventRun;
 use Vinhson\SmsBombing\Commands\SMSBombingCommand;
+use Vinhson\SMSBombing\Events\{ConsoleEventRun, PhoneValid};
 
 $autoloads = [
     __DIR__ . '/../vendor/autoload.php',
@@ -31,12 +31,16 @@ $app = new Application('sms-bombing', 'v1.0.0');
 
 spl_autoload_register(function () {
     include_once __DIR__ . '/../src/Events/ConsoleEventRun.php';
+    include_once __DIR__ . '/../src/Events/PhoneValid.php';
 });
 
 # Add dispatcher
 $dispatcher = Event::getEventDispatcher();
 $dispatcher->addListener('console.running', function (ConsoleEventRun $consoleEventRunning) {
     $consoleEventRunning->setFilename(__DIR__ . '/../api.json');
+});
+$dispatcher->addListener('console.phone', function (PhoneValid $phoneValid) {
+    $phoneValid->parse();
 });
 $app->setDispatcher($dispatcher);
 
