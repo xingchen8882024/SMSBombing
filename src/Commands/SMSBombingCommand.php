@@ -32,7 +32,7 @@ class SMSBombingCommand extends SingleCommandApplication
             ->addArgument('phone', InputArgument::REQUIRED, '轰炸手机号')
             ->addOption('num', 'num', InputOption::VALUE_OPTIONAL, '轰炸次数', 10)
             ->addOption('loop', 'l', InputOption::VALUE_OPTIONAL, '启动循环轰炸次数,', 0)
-            ->addOption('intervals', 'i', InputOption::VALUE_OPTIONAL, '循环轰炸间隔时间', 0)
+            ->addOption('intervals', 'i', InputOption::VALUE_OPTIONAL, '循环轰炸间隔时间', 30)
             ->addOption('timeout', 't', InputOption::VALUE_OPTIONAL, '请求超时时间', 30)
             ->addOption('length', 'length', InputOption::VALUE_OPTIONAL, '报错展示长度', 64)
             ->addOption('stdout', 'out', InputOption::VALUE_OPTIONAL, '是否输出网站描述', false);
