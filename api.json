@@ -184,7 +184,7 @@
             "app": "member",
             "act": "regPhone",
             "time": "[time]",
-            "phone":  "[phone]",
+            "phone": "[phone]",
             "username": "[time]"
         },
         "form": "",
@@ -404,8 +404,8 @@
         "data": ""
     },
     {
-        "desc": "https://www.1dagong.com",
-        "url": "https://www.1dagong.com/Login/sendCode?mobile=[phone]",
+        "desc": "https://online.jobtool.cn",
+        "url": "https://online.jobtool.cn/api/security/sms?phone=[phone]",
         "method": "get",
         "header": "",
         "data": ""
@@ -454,14 +454,16 @@
         "data": ""
     },
     {
-        "desc": "https://api.hanwin.com",
-        "url": "https://api.hanwin.com/v1_sms_index/getSmsCode",
+        "desc": "https://mtbird.staringos.com",
+        "url": "https://mtbird.staringos.com/api/auth/code",
         "method": "post",
-        "header": "",
+        "header": {
+            "Content-Type": "application/json",
+            "Referer": "https://mtbird.staringos.com/auth/login?redirectUrl=https%3A%2F%2Fmtbird.staringos.com%2F",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+        },
         "data": {
-            "share_id": "",
-            "phone": "[phone]",
-            "scene": "register_login"
+            "phone": "[phone]"
         }
     }
 ]
