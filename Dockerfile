@@ -12,10 +12,10 @@ RUN chmod +x run.sh && \
 
 ENV PHONE="" \
     NUM="all" \
-    LOOP="0" \
-    INTERVALS="0" \
-    TIMEOUT="10" \
-    LENGTH="128" \
+    LOOP=0 \
+    INTERVALS=30 \
+    TIMEOUT=10 \
+    LENGTH=128 \
     STDOUT=false
 
 ENTRYPOINT ["/bin/sh", "/var/www/html/run.sh"]

@@ -78,19 +78,6 @@
         "data": ""
     },
     {
-        "desc": "奇热漫画",
-        "url": "https://www.qiremanhua.com/passport/send_msg_code",
-        "method": "POST",
-        "header": {
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Referer": "https://www.qiremanhua.com/passport/reg/?redirectUri=%2F"
-        },
-        "data": {
-            "phone": "[phone]"
-        },
-        "form": ""
-    },
-    {
         "desc": "泛付 PanPay",
         "url": "https://www.panpay.com/e-bank/verifyPhoneCode.do",
         "method": "POST",
@@ -171,26 +158,6 @@
         "form": ""
     },
     {
-        "desc": "51sxue",
-        "url": "http://www.51sxue.com/index.php",
-        "method": "post",
-        "header": {
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Referer": "http://www.51sxue.com/member/register/",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-            "X-Requested-With": "XMLHttpRequest"
-        },
-        "data": {
-            "app": "member",
-            "act": "regPhone",
-            "time": "[time]",
-            "phone": "[phone]",
-            "username": "[time]"
-        },
-        "form": "",
-        "time": ""
-    },
-    {
         "desc": "华测云",
         "url": "https://cloud.huace.cn/ChcnavCloudAuth/code/sms?mobile=[phone]",
         "method": "get",
@@ -234,35 +201,6 @@
         },
         "data": {
             "phone": "[phone]"
-        }
-    },
-    {
-        "desc": "x-mol",
-        "url": "https://www.x-mol.com/login/securityCode?date=157",
-        "method": "post",
-        "header": {
-            "Referer": "https://www.x-mol.com/login",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-            "X-Requested-With": "XMLHttpRequest",
-            "Content-Type": "application/x-www-form-urlencoded"
-        },
-        "data": {
-            "cell": "[phone]"
-        },
-        "form": ""
-    },
-    {
-        "desc": "csdn",
-        "url": "https://passport.csdn.net/v1/register/pc/sendVerifyCode",
-        "method": "post",
-        "header": {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-            "Content-Type": "application/json"
-        },
-        "data": {
-            "code": "0086",
-            "mobile": "[phone]",
-            "type": "0"
         }
     },
     {
@@ -334,13 +272,6 @@
         "data": ""
     },
     {
-        "desc": "http://m.5khouse.com",
-        "url": "http://m.5khouse.com/ashx/yzm.ashx?tel=[phone]&ys=hqyzm&sj=0.11739289648424056",
-        "method": "get",
-        "header": "",
-        "data": ""
-    },
-    {
         "desc": "https://app.zhuanzhuan.com",
         "url": "https://app.zhuanzhuan.com/zz/transfer/getCaptcha?type=1&mobile=[phone]",
         "method": "get",
@@ -385,13 +316,6 @@
     {
         "desc": "https://z12.cnzz.com",
         "url": "https://z12.cnzz.com/stat.htm?id=1280063424&r=&lg=zh-cn&ntime=1632490428&cnzz_eid=1185173797-1632490428-&showp=424x906&p=",
-        "method": "get",
-        "header": "",
-        "data": ""
-    },
-    {
-        "desc": "https://m.ctscd.com",
-        "url": "http://m.ctscd.com/sys/ajax/User/CheckOrActivat.ashx?U_Mobile=[phone]&type=Mobile&checktext=[phone]&_=1624877392029",
         "method": "get",
         "header": "",
         "data": ""
@@ -465,5 +389,32 @@
         "data": {
             "phone": "[phone]"
         }
+    },
+    {
+        "desc": "https://passport.le.ouchn.cn",
+        "url": "https://passport.le.ouchn.cn/Account/SendLoginCode",
+        "method": "post",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "PhoneNumber": "[phone]"
+        },
+        "form": ""
+    },
+    {
+        "desc": "https://iam.pt.ouchn.cn",
+        "url": "https://iam.pt.ouchn.cn/portal/user/sendSmsRegister",
+        "method": "post",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+        },
+        "data": {
+            "userPhone": "[phone]"
+        },
+        "form": ""
     }
 ]
