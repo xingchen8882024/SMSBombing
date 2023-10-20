@@ -76,4 +76,10 @@
     "https://jz.fkw.com/reg.html"
     "https://study.163.com/member/login.htm"
     "https://www.yetu.net/register"
+    # 无法使用接口
+    "https://modelscope.cn/register"
+    "https://www.smartedu.cn/register?__client_id=O9b107EvSr98frNb48oI98KVr4Q17NrR&state=aHR0cHM6Ly9iYXNpYy5zbWFydGVkdS5jbi8%3D"
+    "https://playground.xes1v1.cn/account/login?from=mathgpt"
+    "https://fast.uc.cn/"
+    "https://www.wenxiaozhan.com/login"
 ]

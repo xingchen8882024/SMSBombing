@@ -416,5 +416,64 @@
             "userPhone": "[phone]"
         },
         "form": ""
+    },
+    {
+        "desc": "零克",
+        "url": "http://ci.lingke.pro/index/sms/get_code.html",
+        "method": "POST",
+        "header": {
+            "Referer": "http://ci.lingke.pro/index/index/user_register.html",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "X-Requested-With": "XMLHttpRequest",
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+        },
+        "data": {
+            "phone_area_code": "0086",
+            "type": "register",
+            "phone": "[phone]"
+        },
+        "form": ""
+    },
+    {
+        "desc": "爱发电",
+        "url": "https://afdian.net/api/passport/send-quick-login-code",
+        "method": "POST",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/json",
+            "Referer": "https://afdian.net/login?type=mobile"
+        },
+        "data": {
+            "account": "[phone]"
+        }
+    },
+    {
+        "desc": "树图",
+        "url": "https://gapi.shutu.cn/captcha/send-phone-code",
+        "method": "POST",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/json",
+            "Referer": "https://shutu.cn/"
+        },
+        "data": {
+            "phone": "[phone]"
+        }
+    },
+    {
+        "desc": "ai 助手",
+        "url": "https://api.tiangong.cn/usercenter/v1/sms/code",
+        "method": "POST",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Content-Type": "application/json",
+            "Referer": "https://sso.tiangong.cn/",
+            "Cookie": "UM_distinctid=18b4c261b7fef-0838ee2dd82d32-26031d51-100200-18b4c261b80502; k_device_hash=62f1380213bc8b784983aae3ddc2f996",
+            "K-Client-Id": "200004"
+        },
+        "data": {
+            "scene": "login",
+            "phone": "[phone]"
+        }
     }
 ]
