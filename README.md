@@ -5,7 +5,7 @@
 # Install
 
 ```bash
-composer global require james.xue/sms-bombing --no-dev 
+composer global require james.xue/sms-bombing
 ```
 
 > 支持 docker [sms-bombing](./README-docker.md)
