@@ -475,5 +475,14 @@
             "scene": "login",
             "phone": "[phone]"
         }
+    },
+    {
+        "desc": "能链",
+        "url": "https://openplatformwsgateway.nlktj.com/openplatformws/user/send/sendCheckMsgV7/[phone]",
+        "method": "GET",
+        "header": {
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+        },
+        "data": ""
     }
 ]
