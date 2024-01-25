@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.repository == 'xiaoxuan6/SMSBombing'
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
