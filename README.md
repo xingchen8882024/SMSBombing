@@ -2,6 +2,13 @@
 
 短信轰炸
 
+# Version
+
+| Package Version | Git Branch | PHP Version |
+|---|---|---|
+| v1.* | master | ^8.0 |
+| v2.* | v2 | ^8.1 |
+
 # Install
 
 ```bash

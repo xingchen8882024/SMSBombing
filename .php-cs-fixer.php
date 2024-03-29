@@ -3,7 +3,7 @@
 /*
  * This file is part of james.xue/sms-bombing.
  *
- * (c) xiaoxuan6 <15227736751@qq.com>
+ * (c) xiaoxuan6 <1527736751@qq.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
@@ -22,8 +22,9 @@ HEADER;
 
 $finder = PhpCsFixer\Finder::create()
     ->in([
-        __DIR__ . '/src',
-        __DIR__ . '/bin',
+        __DIR__ . '/app',
+        __DIR__ . '/bootstrap',
+        __DIR__ . '/config',
     ])
     ->exclude([
         __DIR__ . '/vendor',
