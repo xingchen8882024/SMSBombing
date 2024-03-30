@@ -15,7 +15,8 @@ RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/compos
 COPY builds/sms-bombing /var/www/html
 COPY run.sh /var/www/html
 RUN chmod +x run.sh && \
-    chmod +x builds/sms-bombing
+    chmod +x sms-bombing && \
+    mv sms-bombing /usr/local/bin/sms-bombing
 
 ENV PHONE="" \
     NUM="all" \

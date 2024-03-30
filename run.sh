@@ -1,6 +1,6 @@
 #!/bin/sh
 
-builds/sms-bombing $PHONE \
+sms-bombing $PHONE \
     --num=$NUM \
     --loop=$LOOP \
     --intervals=$INTERVALS \
