@@ -11,11 +11,22 @@
 
 # Install
 
+## 直接下载可执行文件
+
+```shell
+curl 'https://raw.githubusercontent.com/xiaoxuan6/sms-bombing/v2/builds/sms-bombing' -o sms-bombing --progress
+chmod +x sms-bombing
+```
+
+## 通过 Composer 安装
+
 ```bash
 composer global require james.xue/sms-bombing
 ```
 
-> 支持 docker [sms-bombing](./README-docker.md)
+## Docker
+
+[sms-bombing](./README-docker.md)
 
 # Use
 
