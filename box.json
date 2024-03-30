@@ -7,7 +7,8 @@
         "vendor"
     ],
     "files": [
-        "composer.json"
+        "composer.json",
+        "api.json"
     ],
     "exclude-composer-files": false,
     "exclude-dev-files": false,
