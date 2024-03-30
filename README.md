@@ -2,29 +2,26 @@
 
 短信轰炸
 
-# Version
+# Requirement
 
-| Package Version | Git Branch | PHP Version |
-|---|---|---|
-| v1.* | master | ^8.0 |
-| v2.* | v2 | ^8.1 |
+* PHP >= 8.1
 
 # Install
 
-## 直接下载可执行文件
+## 1、直接下载 [sms-bombing](./builds/sms-bombing) 可执行文件
 
 ```shell
-curl 'https://raw.githubusercontent.com/xiaoxuan6/sms-bombing/v2/builds/sms-bombing' -o sms-bombing --progress
+curl 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/xiaoxuan6/SMSBombing/v2/builds/sms-bombing' -o sms-bombing --progress-bar
 chmod +x sms-bombing
 ```
 
-## 通过 Composer 安装
+## 2、通过 Composer 安装
 
 ```bash
 composer global require james.xue/sms-bombing
 ```
 
-## Docker
+## 3、Docker
 
 [sms-bombing](./README-docker.md)
 
