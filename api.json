@@ -484,5 +484,89 @@
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
         },
         "data": ""
+    },
+    {
+        "desc": "厚德云",
+        "url": "https://api.houdeyun.cn/userapi/api/v3/sms/login/code",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+        },
+        "data": {
+            "mobile": "[phone]"
+        }
+    },
+    {
+        "desc": "kimi",
+        "url": "https://kimi.moonshot.cn/api/user/sms/verify-code",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+        },
+        "data": {
+            "phone": "[phone]",
+            "action": "register"
+        }
+    },
+    {
+        "desc": "饭碗警告",
+        "url": "https://fwalert.com/api/auth/login/send-sms-login-code",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+        },
+        "data": {
+            "mobile": "[phone]"
+        }
+    },
+    {
+        "desc": "风鸟",
+        "url": "https://www.riskbird.com/riskbird-api/sendSmsCodeNew",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+        },
+        "data": {
+            "mobile": "[phone]"
+        }
+    },
+    {
+        "desc": "Free",
+        "url": "https://api.csm.sayqz.com/captcha/sent?phone=[phone]&timestamp=[time]&realIP=116.25.146.177&noCookie=true",
+        "method": "GET",
+        "header": {
+            "Content-Type": "application/json"
+        },
+        "data": ""
+    },
+    {
+        "desc": "rss",
+        "url": "https://user.rss.cafe/user/sms/phoneverify/[phone]",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+        },
+        "data": ""
+    },
+    {
+        "desc": "中国诗歌网",
+        "url": "https://www.zgshige.com/zcms/ajax/invoke",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+        },
+        "data": {
+            "_ZVING_METHOD": "RealNameAuthentication.sendCode",
+            "_ZVING_URL": "/zcms/member/register",
+            "_ZVING_DATA": "{\"Mobile\":\"[phone]\",\"UserName\":\"AGHON4FJ3Y\",\"SiteID\":\"122\"}",
+            "_ZVING_DATA_FORMAT": "json"
+        },
+        "form": true
     }
 ]

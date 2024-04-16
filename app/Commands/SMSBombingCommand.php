@@ -109,7 +109,12 @@ class SMSBombingCommand extends Command
 
                         if (mb_strlen($responseBody) == mb_strlen($body)) {
                             try {
-                                $body = json_encode(json_decode($responseBody, true), JSON_UNESCAPED_UNICODE);
+                                $decode = json_decode($responseBody, true);
+                                if (empty($decode)) {
+                                    $body = '{"code":200,"msg":"请求成功！"}';
+                                } else {
+                                    $body = json_encode($decode, JSON_UNESCAPED_UNICODE);
+                                }
                             } catch (Exception) {
                             }
                         }
