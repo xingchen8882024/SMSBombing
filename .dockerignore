@@ -2,11 +2,14 @@
 .idea
 /vendor/
 .editorconfig
+.gitattributes
 .gitignore
 .php-cs-fixer.cache
 .php-cs-fixer.php
-api.yml
 LICENSE
 README.md
 README-docker.md
 rector.php
+generateMd.php
+Makefile
+sms-bombing
