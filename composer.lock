@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c83dfa99cfb64a4104a587e236bda2aa",
+    "content-hash": "b833f53111b881d016f98077b27903ef",
     "packages": [
         {
             "name": "brick/math",
@@ -6574,16 +6574,16 @@
         },
         {
             "name": "james.xue/packet",
-            "version": "v0.0.5",
+            "version": "v0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xiaoxuan6/packet.git",
-                "reference": "3476af005bc7cb74db144f64571e79bd2640a7d1"
+                "reference": "7d78502557b6d515a41eea554cd325e08961b044"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xiaoxuan6/packet/zipball/3476af005bc7cb74db144f64571e79bd2640a7d1",
-                "reference": "3476af005bc7cb74db144f64571e79bd2640a7d1",
+                "url": "https://api.github.com/repos/xiaoxuan6/packet/zipball/7d78502557b6d515a41eea554cd325e08961b044",
+                "reference": "7d78502557b6d515a41eea554cd325e08961b044",
                 "shasum": ""
             },
             "require": {
@@ -6640,7 +6640,7 @@
                 "issues": "https://github.com/xiaoxuan6/packet/issues",
                 "source": "https://github.com/xiaoxuan6/packet"
             },
-            "time": "2024-04-30T13:32:20+00:00"
+            "time": "2024-05-03T11:00:29+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
