@@ -568,5 +568,98 @@
             "_ZVING_DATA_FORMAT": "json"
         },
         "form": true
+    },
+    {
+        "desc": "ecer",
+        "url": "https://uc.ecer.com/home/app/sendcode",
+        "method": "POST",
+        "header": "",
+        "data": {
+            "mobile": "[phone]",
+            "idd_code": "86",
+            "reg_mode": 0
+        }
+    },
+    {
+        "desc": "ecer",
+        "url": "https://uc.ecer.com/home/app/sendcode",
+        "method": "POST",
+        "header": "",
+        "data": {
+            "mobile": "[phone]",
+            "idd_code": "86",
+            "reg_mode": 1
+        }
+    },
+    {
+        "desc": "宏业课堂",
+        "url": "http://v.hysware.com/View/BaseLogin/Hander/BaseHandler.ashx",
+        "method": "POST",
+        "header": "",
+        "data": {
+            "MobilePhone": "[phone]",
+            "Type": "SendCode",
+            "registcode": 303091
+        }
+    },
+    {
+        "desc": "playbattlegrounds",
+        "url": "https://erangelclassic.playbattlegrounds.com.cn/send-verification-code",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "https://erangelclassic.playbattlegrounds.com.cn/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "phone_number": "[phone]"
+        },
+        "form": ""
+    },
+    {
+        "desc": "bugbank",
+        "url": "https://www.bugbank.cn/api/signin/verifymobile",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "https://www.bugbank.cn/signin.html",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "X-Client-Id": "user-web",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "mobile": "[phone]"
+        },
+        "form": ""
+    },
+    {
+        "desc": "bugbank signin",
+        "url": "https://www.bugbank.cn/api/verify_mobile",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "https://www.bugbank.cn/signup.html",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "X-Client-Id": "user-web",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        "data": {
+            "mobile": "[phone]"
+        },
+        "form": ""
+    },
+    {
+        "desc": "yunhuoban",
+        "url": "http://www.yunhuoban.cn/v1/register/sms",
+        "method": "POST",
+        "header": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        },
+        "data": {
+            "data": "{\"telphone\":\"[phone]\",\"status\":1}"
+        },
+        "form": ""
     }
 ]

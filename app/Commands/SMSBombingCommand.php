@@ -65,7 +65,12 @@ class SMSBombingCommand extends Command
         $num = $this->option('num');
         $loop = $this->option('loop');
         $client = new Client(['verify' => false, 'timeout' => $this->option('timeout')]);
-        $apis = collect(json_decode(file_get_contents(__DIR__ . '/../../api.json'), true));
+        $apis = collect(
+            json_decode(
+                file_get_contents('https://mirror.ghproxy.com/https://raw.githubusercontent.com/xiaoxuan6/SMSBombing/v2/api.json'),
+            true
+            )
+        );
 
         do {
             $apis = $num == 'all' ? $apis : ($num > $apis->count() ? $apis : $apis->random($num));
