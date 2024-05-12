@@ -14,6 +14,10 @@
 > [!NOTE]  
 > 基础框架已提供，如需添加/修改更多 `api` 接口，直接修改 `api.json` 文件，切勿重复提交相关 issue [#14](https://github.com/xiaoxuan6/SMSBombing/issues/14)、[#11](https://github.com/xiaoxuan6/SMSBombing/issues/11)、[#10](https://github.com/xiaoxuan6/SMSBombing/issues/10)
 
+> [!WARNINGS]
+> 版本 `v2.1.0` 之后默认使用 `url` 获取 `api.json`, 如果需要使用指定 `api.json` 请使用版本 `v2.1.1` 或更高版本（不支持 docker）。
+> EX: sms-bombing 176xxxxxxxx -f ./api.json
+
 # Requirement
 
 * PHP >= 8.1

@@ -13,6 +13,7 @@
 namespace App\Commands;
 
 use Exception;
+use InvalidArgumentException;
 use GuzzleHttp\{Client, Pool};
 use GuzzleHttp\Psr7\{Request, Response};
 use LaravelZero\Framework\Commands\Command;
@@ -38,6 +39,7 @@ class SMSBombingCommand extends Command
         {--t|timeout=30 : 请求超时时间}
         {--length=64 : 报错展示长度}
         {--stdout=false : 是否输出网站描述}
+        {--f|filename= : 存储 api.json 文件路径}
     ';
 
     /**
@@ -67,8 +69,23 @@ class SMSBombingCommand extends Command
         $client = new Client(['verify' => false, 'timeout' => $this->option('timeout')]);
         $apis = collect(
             json_decode(
-                file_get_contents('https://mirror.ghproxy.com/https://raw.githubusercontent.com/xiaoxuan6/SMSBombing/v2/api.json'),
-            true
+                file_get_contents(
+                    value(function () {
+                        if ($filename = $this->option('filename')) {
+                            str($filename)->startsWith('.') and $filename = getcwd() . str_replace('./', '/', $filename);
+
+                            if (! file_exists($filename)) {
+                                throw new InvalidArgumentException(sprintf('[%s] 文件不存在', $filename));
+                            }
+
+                            return $filename;
+                        }
+
+                        return 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/xiaoxuan6/SMSBombing/v2/api.json';
+
+                    })
+                ),
+                true
             )
         );
 
