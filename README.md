@@ -116,6 +116,14 @@ sms-bombing 136xxxxxxxx -l 2
 # Stargazers over time
 [![Stargazers over time](https://starchart.cc/xiaoxuan6/SMSBombing.svg?variant=adaptive)](https://starchart.cc/xiaoxuan6/SMSBombing)
 
+# Changelog
+
+Please see [CHANGELOG](./CHANGELOG.md) for more information on what has changed recently.
+
+# License
+
+The MIT License (MIT). Please see [License File](./LICENSE) for more information.
+
 # 免责声明
 
 若使用者滥用本项目,本人 无需承担 任何法律责任. 本程序仅供娱乐,源码全部开源,禁止滥用 和二次 贩卖盈利. 禁止用于商业用途.
