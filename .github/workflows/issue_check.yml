@@ -1,0 +1,35 @@
+name: Check if user has starred the repository
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check-star:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: gacts/is-stargazer@v1
+        id: check-star
+
+      - if: steps.check-star.outputs.is-stargazer != 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '⭐ Please, star this repository!'
+            })
+
+      - if: ${{ github.actor != 'github-actions[bot]' }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            })
