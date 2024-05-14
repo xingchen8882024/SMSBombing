@@ -4,10 +4,13 @@
 
 [![Auth](https://img.shields.io/badge/Auth-xiaoxuan6-ff69b4?logo=github)](https://github.com/xiaoxuan6)
 [![GitHub Pull Requests](https://img.shields.io/github/stars/xiaoxuan6/SMSBombing?logo=Undertale)](https://github.com/xiaoxuan6/SMSBombing/stargazers)
+![GitHub forks](https://img.shields.io/github/forks/xiaoxuan6/SMSBombing?style=flat&logo=forgejo)
 [![Github latest release](https://img.shields.io/github/v/release/xiaoxuan6/SMSBombing)](https://github.com/xiaoxuan6/SMSBombing/releases)
+![GitHub Tag](https://img.shields.io/github/v/tag/xiaoxuan6/SMSBombing)
 [![HitCount](https://views.whatilearened.today/views/github/xiaoxuan6/SMSBombing.svg)](https://github.com/xiaoxuan6/SMSBombing)
-[![GitHub license](https://img.shields.io/github/license/xiaoxuan6/SMSBombing)](https://github.com/xiaoxuan6/SMSBombing/blob/v2/LICENSE)
 [![](https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-xiaoxuan6‘s-d7b1bf?logo=Blogger)](https://xiaoxuan6.vercel.app/)
+![Static Badge](https://img.shields.io/badge/weekly-%E5%91%A8%E5%88%8A-d7b1bf?style=flat&logo=stackexchange)
+[![GitHub license](https://img.shields.io/github/license/xiaoxuan6/SMSBombing)](https://github.com/xiaoxuan6/SMSBombing/blob/v2/LICENSE)
 
 </div>
 
@@ -78,7 +81,8 @@ sms-bombing 136xxxxxxxx --num=5 -l 2
 sms-bombing 136xxxxxxxx --num=5 -l 2 -i 30
 ```
 
-# 轰炸效果
+<details>
+<summary><b>轰炸效果</b></summary>
 
 ```bash
 sms-bombing 136xxxxxxxx -l 2
@@ -113,12 +117,21 @@ sms-bombing 136xxxxxxxx -l 2
 索引：9 请求结果：1
 ```
 
-# Stargazers over time
-[![Stargazers over time](https://starchart.cc/xiaoxuan6/SMSBombing.svg?variant=adaptive)](https://starchart.cc/xiaoxuan6/SMSBombing)
+</details>
 
 # Changelog
 
 Please see [CHANGELOG](./CHANGELOG.md) for more information on what has changed recently.
+
+# 捐赠
+
+如果此项目对您有帮助，还希望您捐赠支持，让我能好好的一直坚持下去。金额不在于多少，一份心意就好！在此感谢所有的捐赠者，你们的鼓励是我最大的动力！
+
+<div style="background:#e3e3e3; color:#FFF" align=center >
+<img width="220" height="300" src="https://cdn.jsdelivr.net/gh/xiaoxuan6/static/images/202212102216540.png"/>&nbsp;&nbsp;&nbsp;&nbsp;<img width="200" height="300" src="https://cdn.jsdelivr.net/gh/xiaoxuan6/static/images/202212102216435.jpg"/></div>
+
+# Stargazers over time
+[![Stargazers over time](https://starchart.cc/xiaoxuan6/SMSBombing.svg?variant=adaptive)](https://starchart.cc/xiaoxuan6/SMSBombing)
 
 # License
 
