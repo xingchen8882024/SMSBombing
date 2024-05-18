@@ -13,7 +13,7 @@
 namespace App\Commands;
 
 use Exception;
-use InvalidArgumentException;
+use Webmozart\Assert\Assert;
 use GuzzleHttp\{Client, Pool};
 use GuzzleHttp\Psr7\{Request, Response};
 use LaravelZero\Framework\Commands\Command;
@@ -51,6 +51,8 @@ class SMSBombingCommand extends Command
 
     /**
      * Execute the console command.
+     *
+     * @return int
      */
     public function handle(): int
     {
@@ -60,7 +62,6 @@ class SMSBombingCommand extends Command
             required: true,
             validate: fn (string $value): bool|string => preg_match('/^1[3-9]\d{9}$/', $value) ? true : self::LABEL,
         ))->trim()->toString();
-
 
         $i = 1;
         $status = true;
@@ -74,9 +75,7 @@ class SMSBombingCommand extends Command
                         if ($filename = $this->option('filename')) {
                             str($filename)->startsWith('.') and $filename = getcwd() . str_replace('./', '/', $filename);
 
-                            if (! file_exists($filename)) {
-                                throw new InvalidArgumentException(sprintf('[%s] 文件不存在', $filename));
-                            }
+                            Assert::fileExists($filename, '文件 [%s] 不存在');
 
                             return $filename;
                         }
