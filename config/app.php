@@ -10,8 +10,6 @@
  *
  */
 
-use App\Providers\AppServiceProvider;
-
 return [
 
     /*
@@ -79,7 +77,6 @@ return [
     */
 
     'providers' => [
-        AppServiceProvider::class,
     ],
 
 ];

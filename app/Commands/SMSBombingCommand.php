@@ -110,7 +110,7 @@ class SMSBombingCommand extends Command
             $outFn = function ($response, $index) use ($apis): void {
                 $desc = $apis->get($index)['desc'];
 
-                $message = $this->option('stdout') ?
+                $message = $this->option('stdout') != 'false' ?
                     PHP_EOL . "请求网站：<comment>{$desc}</comment> " .
                     PHP_EOL . "请求结果：<comment>{$response}</comment>" :
                     " 请求结果：<comment>{$response}</comment>";
