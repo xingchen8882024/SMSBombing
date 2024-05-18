@@ -15,6 +15,7 @@ namespace App\Commands;
 use Exception;
 use Webmozart\Assert\Assert;
 use GuzzleHttp\{Client, Pool};
+use Illuminate\Support\Stringable;
 use GuzzleHttp\Psr7\{Request, Response};
 use LaravelZero\Framework\Commands\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
@@ -56,12 +57,16 @@ class SMSBombingCommand extends Command
      */
     public function handle(): int
     {
-        $phone = str($this->argument('phone') ?? text(
-            self::LABEL,
-            self::LABEL,
-            required: true,
-            validate: fn (string $value): bool|string => preg_match('/^1[3-9]\d{9}$/', $value) ? true : self::LABEL,
-        ))->trim()->toString();
+        $phone = str($this->argument('phone') ?? $this->handleText())
+            ->trim()
+            ->when(true, function (Stringable $str, $value) {
+                if (preg_match('/^1[3-9]\d{9}$/', $str->toString()) != 1) {
+                    return str($this->handleText())->trim();
+                }
+
+                return $str;
+            })
+            ->toString();
 
         $i = 1;
         $status = true;
@@ -177,5 +182,15 @@ class SMSBombingCommand extends Command
         } while ($status);
 
         return self::SUCCESS;
+    }
+
+    private function handleText(): string
+    {
+        return text(
+            self::LABEL,
+            self::LABEL,
+            required: true,
+            validate: fn (string $value): bool|string => preg_match('/^1[3-9]\d{9}$/', $value) ? true : self::LABEL,
+        );
     }
 }
