@@ -32,20 +32,29 @@
 
 # Install
 
-## 1、直接下载 [sms-bombing](./builds/sms-bombing) 可执行文件
+> [!NOTE]  
+> 以下三种方法使用任意一种方法安装都可以，并不是三种方法全部执行！！！
+> 
+> 以下三种方法使用任意一种方法安装都可以，并不是三种方法全部执行！！！
+> 
+> 以下三种方法使用任意一种方法安装都可以，并不是三种方法全部执行！！！
+> 
+> 重要的事情说三遍。
+
+## 方法一、直接下载 [sms-bombing](./builds/sms-bombing) 可执行文件
 
 ```shell
 curl 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/xiaoxuan6/SMSBombing/v2/builds/sms-bombing' -o sms-bombing --progress-bar
 chmod +x sms-bombing
 ```
 
-## 2、通过 Composer 安装
+## 方法二、通过 Composer 安装
 
 ```bash
 composer global require james.xue/sms-bombing
 ```
 
-## 3、Docker
+## 方法三、Docker
 
 [sms-bombing](./README-docker.md)
 
