@@ -46,6 +46,11 @@
 ```shell
 curl 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/xiaoxuan6/SMSBombing/v2/builds/sms-bombing' -o sms-bombing --progress-bar
 chmod +x sms-bombing
+
+# linux 下执行
+mv sms-bombing /usr/local/bin/sms-bombing
+
+# win 下使用 ./smsbombing ，否则报错：command not found
 ```
 
 ## 方法二、通过 Composer 安装
