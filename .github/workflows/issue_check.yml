@@ -23,7 +23,7 @@ jobs:
               body: '⭐ Please, star this repository!'
             })
 
-      - if: ${{ github.actor != 'github-actions[bot]' }}
+      - if: ${{ steps.check-star.outputs.is-stargazer != 'true' && github.actor != 'github-actions[bot]' }}
         uses: actions/github-script@v6
         with:
           script: |
