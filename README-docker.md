@@ -30,3 +30,11 @@ docker run --rm -e PHONE=17621838888 ghcr.io/xiaoxuan6/sms-bombing:latest
 ## LENGTH
 
 报错展示长度（默认128）
+
+## FILENAME (Version v2.1.3 or higher)
+
+存储 `api.json` 文件路径，默认为空
+
+```docker
+docker run --rm -e PHONE=17621838888 -e FILENAME=./api.json -v $(pwd)/api.json:/var/www/html/api.json ghcr.io/xiaoxuan6/sms-bombing:latest
+```

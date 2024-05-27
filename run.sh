@@ -6,4 +6,5 @@ sms-bombing $PHONE \
     --intervals=$INTERVALS \
     --timeout=$TIMEOUT \
     --length=$LENGTH \
-    --stdout=$STDOUT
+    --stdout=$STDOUT \
+    --filename=$FILENAME

@@ -18,6 +18,7 @@ ENV PHONE="" \
     INTERVALS=30 \
     TIMEOUT=10 \
     LENGTH=128 \
-    STDOUT=false
+    STDOUT=false \
+    FILENAME=""
 
 ENTRYPOINT ["/bin/sh", "/var/www/html/run.sh"]
