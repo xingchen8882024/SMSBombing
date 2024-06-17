@@ -535,15 +535,6 @@
         }
     },
     {
-        "desc": "Free",
-        "url": "https://api.csm.sayqz.com/captcha/sent?phone=[phone]&timestamp=[time]&realIP=116.25.146.177&noCookie=true",
-        "method": "GET",
-        "header": {
-            "Content-Type": "application/json"
-        },
-        "data": ""
-    },
-    {
         "desc": "rss",
         "url": "https://user.rss.cafe/user/sms/phoneverify/[phone]",
         "method": "POST",
